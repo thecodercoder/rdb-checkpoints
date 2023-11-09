@@ -1,0 +1,46 @@
+@use '../util' as u;
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: u.rem(42);
+  font-size: clamp(
+    u.rem(40),
+    1.77rem + 3.64vw,
+    u.rem(72)
+  ); // Note! the u.rem(40) is a mistake from the video, will be corrected later on.
+
+  // @include u.breakpoint(medium) {
+  //   font-size: u.rem(60);
+  // }
+
+  // @include u.breakpoint(large) {
+  //   font-size: u.rem(72);
+  // }
+}
+
+h2 {
+  font-size: u.rem(36);
+  font-size: clamp(u.rem(36), 1.91rem + 1.45vw, u.rem(48));
+}
+
+h3 {
+  font-size: u.rem(24);
+}
+
+p {
+  margin-top: 0;
+  font-size: u.rem(16);
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
