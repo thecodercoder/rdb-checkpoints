@@ -1,0 +1,63 @@
+@use '../util' as u;
+
+.topnav {
+  background-color: var(--header-bg);
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 12px;
+
+    @include u.breakpoint(large) {
+      padding-block: 20px;
+    }
+  }
+
+  &__homelink {
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &__logo {
+    width: u.rem(70);
+
+    @include u.breakpoint(large) {
+      width: u.rem(128);
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+
+    @include u.breakpoint(large) {
+      gap: 40px;
+    }
+  }
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    font-size: u.rem(14);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--text-light);
+    text-transform: uppercase;
+
+    @include u.breakpoint(large) {
+      font-size: u.rem(16);
+    }
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+    }
+  }
+}
