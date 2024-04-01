@@ -9,8 +9,7 @@ h3 {
 
 h1 {
   font-size: u.rem(42);
-  // Note! the u.rem(40) is a mistake from the video, will be corrected later on.
-  font-size: clamp(u.rem(40), 1.77rem + 3.64vw, u.rem(72));
+  font-size: clamp(u.rem(42), 1.77rem + 3.64vw, u.rem(72));
   line-height: 1;
   margin-block-end: u.rem(20);
 
