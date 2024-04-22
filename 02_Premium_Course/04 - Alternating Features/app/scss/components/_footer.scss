@@ -58,10 +58,10 @@
     color: var(--text-dark);
 
     &:hover {
-      color: var(--text-link-hover);
+      color: var(--text-link);
 
       #{$b}__social-path {
-        fill: var(--text-link-hover);
+        fill: var(--text-link);
       }
     }
   }

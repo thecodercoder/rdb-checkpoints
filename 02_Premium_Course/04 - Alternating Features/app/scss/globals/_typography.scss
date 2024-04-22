@@ -32,6 +32,20 @@ h2 {
 h3 {
   font-size: u.rem(24);
   line-height: 1;
+  margin-block-end: u.rem(10);
+
+  &.large {
+    font-size: u.rem(36);
+    font-size: clamp(u.rem(36), 2.02rem + 0.97vw, u.rem(44));
+
+    span {
+      display: block;
+      font-size: u.rem(20);
+      font-size: clamp(u.rem(20), 1.14rem + 0.48vw, u.rem(24));
+      text-transform: uppercase;
+      margin-block-end: u.rem(10);
+    }
+  }
 }
 
 p {
@@ -55,4 +69,8 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+a {
+  color: var(--text-link);
 }
