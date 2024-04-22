@@ -1,0 +1,43 @@
+@use '../util' as u;
+
+.alt-feature {
+  &__wrapper {
+    display: grid;
+    gap: 60px;
+
+    @include u.breakpoint(large) {
+      gap: 80px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+    @include u.breakpoint(large) {
+      flex-direction: row;
+      gap: 8%;
+
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__image {
+    width: auto;
+    max-width: u.rem(200);
+
+    @include u.breakpoint(large) {
+      max-width: 100%;
+    }
+  }
+
+  &__text {
+    p {
+      margin-block-end: 0;
+    }
+  }
+}
