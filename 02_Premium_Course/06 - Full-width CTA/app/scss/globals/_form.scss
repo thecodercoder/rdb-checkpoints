@@ -1,0 +1,19 @@
+@use '../util' as u;
+
+.form {
+  &__label,
+  &__text {
+    font-size: u.rem(18);
+    line-height: 1;
+  }
+
+  &__label {
+    font-weight: 700;
+  }
+
+  &__text {
+    padding: u.rem(8) u.rem(20);
+    border: none;
+    border-radius: 5px;
+  }
+}

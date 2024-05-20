@@ -1,0 +1,50 @@
+@use '../util' as u;
+
+.hero {
+  --wave-height: clamp(
+    1.3125rem,
+    -0.36363636363636376rem + 7.151515151515151vw,
+    5rem
+  );
+
+  background-color: var(--hero-bg);
+  color: var(--text-light);
+  padding-block-start: 40px;
+
+  &__wave {
+    height: var(--wave-height);
+  }
+
+  &__content {
+    display: grid;
+    gap: 40px;
+    margin-block-end: calc(60px + var(--wave-height));
+
+    @include u.breakpoint(large) {
+      grid-template-columns: 6fr 5fr;
+      margin-block-end: 0;
+    }
+  }
+
+  &__image {
+    width: 61%;
+    max-width: u.rem(483);
+    justify-self: center;
+
+    @include u.breakpoint(large) {
+      width: 100%;
+      padding-block-start: 30px;
+      order: 2;
+      justify-self: end;
+    }
+  }
+
+  &__text {
+  }
+
+  &__button {
+    &:first-of-type {
+      margin-inline-end: 20px;
+    }
+  }
+}
