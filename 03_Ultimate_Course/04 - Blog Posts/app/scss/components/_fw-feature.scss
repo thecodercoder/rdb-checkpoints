@@ -1,0 +1,17 @@
+@use '../util' as u;
+
+.fw-feature {
+  // @include u.fullwidth;
+  background-color: var(--fullwidth-bg);
+
+  &__wrapper {
+  }
+
+  &__title {
+  }
+
+  &__image {
+    max-width: u.rem(792);
+    margin-inline: auto;
+  }
+}

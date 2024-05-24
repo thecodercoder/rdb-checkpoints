@@ -1,0 +1,151 @@
+@use '../util' as u;
+
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  &,
+  &__menu {
+    background-color: var(--header-bg);
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 12px;
+
+    @include u.breakpoint(large) {
+      padding-block: 20px;
+    }
+  }
+
+  &__homelink {
+  }
+
+  &__logo {
+    width: u.rem(70);
+
+    @include u.breakpoint(large) {
+      width: u.rem(128);
+    }
+  }
+
+  &__overlay {
+    @include u.breakpoint-down(small) {
+      position: fixed;
+      inset: 0;
+      background-color: var(--menu-overlay);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity ease-in-out;
+
+      &:has(+ .topnav__open[aria-expanded='true']) {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+  }
+
+  &__open,
+  &__close {
+    background: none;
+    padding: 0;
+    border: 0;
+  }
+
+  &__open {
+    @include u.breakpoint(medium) {
+      display: none;
+    }
+
+    &[aria-expanded='true'] + .topnav__menu {
+      translate: 0 0;
+
+      @media (prefers-reduced-motion) {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__menu {
+    @include u.breakpoint-down(small) {
+      position: fixed;
+      inset: 0 0 auto 0;
+      padding: 12px 24px 120px;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 12px 12px var(--menu-shadow);
+      translate: 0 -106%;
+      transition: translate ease-in-out;
+
+      @media (prefers-reduced-motion) {
+        translate: 0;
+        opacity: 0;
+        transition-property: opacity;
+      }
+    }
+  }
+
+  &__close {
+    display: none;
+
+    @include u.breakpoint-down(small) {
+      display: block;
+      margin-inline-start: auto;
+      margin-block-end: 84px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 40px;
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item:first-child {
+    @include u.breakpoint(medium) {
+      display: none;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: u.rem(20);
+    line-height: 1;
+    font-weight: 700;
+    color: var(--text-light);
+
+    @include u.breakpoint(medium) {
+      font-size: u.rem(16);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      height: 3px;
+      margin-top: 3px;
+      background: linear-gradient(
+        to right,
+        var(--link-gradient1),
+        var(--link-gradient2) 80%
+      );
+      opacity: 0;
+      transition: opacity 250ms ease-in-out;
+
+      @include u.breakpoint-down(small) {
+        display: none;
+      }
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+}

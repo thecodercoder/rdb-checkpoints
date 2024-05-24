@@ -1,0 +1,76 @@
+@use '../util' as u;
+
+.footer {
+  $b: &;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: u.rem(40) u.rem(20);
+
+    @include u.breakpoint(medium) {
+      grid-template-columns: repeat(4, auto);
+    }
+  }
+
+  &__logo {
+    grid-column: 1 / -1;
+  }
+
+  &__homelink {
+    display: block;
+    width: fit-content;
+  }
+
+  &__logo-image {
+    width: 8rem;
+    margin-block-end: u.rem(10);
+  }
+
+  &__copyright {
+    line-height: 1;
+    margin-block-end: 0;
+  }
+
+  &__column {
+  }
+
+  &__column-title {
+    font-size: u.rem(22);
+    line-height: 1.1;
+    margin-block-end: u.rem(18);
+  }
+
+  &__links {
+    display: grid;
+    gap: u.rem(10);
+  }
+
+  &__item {
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: u.rem(16);
+    font-size: u.rem(18);
+    line-height: 1;
+    color: var(--text-dark);
+
+    &:hover {
+      color: var(--text-link);
+
+      #{$b}__social-path {
+        fill: var(--text-link);
+      }
+    }
+  }
+
+  &__social {
+    width: u.rem(18);
+  }
+
+  &__social-path {
+    fill: var(--text-dark);
+  }
+}
