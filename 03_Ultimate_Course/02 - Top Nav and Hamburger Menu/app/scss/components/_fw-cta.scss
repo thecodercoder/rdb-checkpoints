@@ -1,0 +1,61 @@
+@use '../util' as u;
+
+.fw-cta {
+  // @include u.fullwidth;
+  background: linear-gradient(
+    90deg,
+    var(--gradient1) 0%,
+    var(--gradient2) 75%,
+    var(--gradient3) 150%
+  );
+
+  @include u.breakpoint(large) {
+    background: linear-gradient(
+      90deg,
+      var(--gradient1) 0%,
+      var(--gradient2) 55%,
+      var(--gradient3) 110%
+    );
+  }
+
+  &__form {
+    display: grid;
+    grid-template-areas:
+      'label'
+      'text'
+      'button';
+    max-width: u.rem(350);
+    margin-inline: auto;
+
+    @include u.breakpoint(medium) {
+      grid-template-areas:
+        'label label'
+        'text button';
+      justify-content: center;
+    }
+  }
+
+  &__label {
+    grid-area: label;
+    justify-self: start;
+    margin-block-end: 12px;
+  }
+
+  &__text {
+    grid-area: text;
+
+    @include u.breakpoint-down(small) {
+      margin-block-end: 20px;
+    }
+
+    @include u.breakpoint(medium) {
+      margin-inline-end: 20px;
+      width: u.rem(300);
+    }
+  }
+
+  &__button {
+    grid-area: button;
+    justify-self: center;
+  }
+}

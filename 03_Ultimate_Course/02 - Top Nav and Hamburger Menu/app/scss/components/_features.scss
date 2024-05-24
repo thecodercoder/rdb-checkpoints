@@ -1,0 +1,56 @@
+@use '../util' as u;
+
+.features {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 5.5%;
+  }
+
+  &__item {
+    flex: 0 1 u.rem(346);
+    text-align: center;
+
+    @include u.breakpoint(large) {
+      text-align: start;
+    }
+  }
+
+  // Flexbox -- media queries
+  // &__wrapper {
+  //   display: flex;
+  //   gap: 40px;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+
+  //   @include u.breakpoint(large) {
+  //     flex-wrap: nowrap;
+  //     gap: 5.5%;
+  //   }
+  // }
+
+  // &__item {
+  //   text-align: center;
+
+  //   @include u.breakpoint(large) {
+  //     flex: 1;
+  //     text-align: start;
+  //   }
+  // }
+
+  &__icon {
+    width: auto;
+    height: u.rem(48);
+    margin-block-end: 10px;
+
+    @include u.breakpoint-down(medium) {
+      margin-inline: auto;
+    }
+  }
+
+  &__description {
+    max-width: 50ch;
+    margin-block-end: 0;
+  }
+}

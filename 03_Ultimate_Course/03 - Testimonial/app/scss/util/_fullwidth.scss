@@ -1,0 +1,12 @@
+@use 'functions' as f;
+
+@mixin fullwidth {
+  color: var(--text-light);
+  text-align: center;
+
+  &__description {
+    max-width: 70ch;
+    margin-inline: auto;
+    margin-block-end: f.rem(40);
+  }
+}
