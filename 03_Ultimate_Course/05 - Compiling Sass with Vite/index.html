@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mythos</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script defer src="/app/js/bodyScrollLock.min.js"></script>
+    <script defer src="/app/js/script.js"></script>
+  </head>
+  <body>
+    <a href="#main" class="visually-hidden">Skip to main content</a>
+    <header class="topnav">
+      <h2 class="visually-hidden">Header</h2>
+      <div class="wrapper topnav__wrapper">
+        <a href="/" class="topnav__homelink hover-fade">
+          <img
+            src="/img/logo-mythos.svg"
+            alt="Mythos homepage"
+            class="topnav__logo"
+            width="128"
+            height="36"
+          />
+        </a>
+        <nav>
+          <span id="nav-label" hidden>Navigation</span>
+          <div id="overlay" class="topnav__overlay"></div>
+          <button
+            id="btnOpen"
+            class="topnav__open"
+            aria-expanded="false"
+            aria-labelledby="nav-label"
+          >
+            <img src="/img/hamburger.svg" alt="" width="30" height="23" />
+          </button>
+          <div
+            id="menuTopNav"
+            class="topnav__menu"
+            role="dialog"
+            aria-labelledby="nav-label"
+          >
+            <button id="btnClose" class="topnav__close">
+              <img src="/img/close-button.svg" alt="" width="26" height="26" />
+            </button>
+            <ul class="topnav__links">
+              <li class="topnav__item">
+                <a href="" class="topnav__link">Home</a>
+              </li>
+              <li class="topnav__item">
+                <a href="" class="topnav__link">Features</a>
+              </li>
+              <li class="topnav__item">
+                <a href="" class="topnav__link">Pricing</a>
+              </li>
+              <li class="topnav__item">
+                <a href="" class="topnav__link">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <article>
+        <section class="hero fb-wrapper">
+          <img
+            src="/img/hero-wave.svg"
+            alt=""
+            width="1440"
+            height="80"
+            class="hero__wave fb-wrapper__full"
+          />
+          <div class="hero__content fb-wrapper__content">
+            <img
+              src="/img/unicorn.svg"
+              alt="unicorn with stars"
+              class="hero__image"
+              width="483"
+              height="486"
+            />
+            <div class="hero__text">
+              <h1 class="hero__title">Find that elusive unicorn.</h1>
+              <p class="large">
+                Mythos will enable you to discover the newest startups to invest
+                in. Powered by AI, used by millions of humans.
+              </p>
+              <a href="" class="hero__button button primary">Free Trial</a>
+              <a href="" class="hero__button button secondary">Pricing</a>
+            </div>
+          </div>
+        </section>
+        <section class="features">
+          <h2 class="visually-hidden">Features</h2>
+          <div class="wrapper features__wrapper">
+            <div class="features__item">
+              <img
+                src="/img/icon-asterisk.svg"
+                alt=""
+                width="43"
+                height="48"
+                class="features__icon"
+              />
+              <h3 class="features__title">AI-powered matching</h3>
+              <p class="features__description">
+                Phasellus ac mi magna. Sed scelerisque, turpis vitae consequat
+                vehicula, sem turpis pretium tellus, tempor posuere turpis est
+                ac velit.
+              </p>
+            </div>
+            <div class="features__item">
+              <img
+                src="/img/icon-bell.svg"
+                alt=""
+                width="41"
+                height="48"
+                class="features__icon"
+              />
+              <h3 class="features__title">Immediate notifications</h3>
+              <p class="features__description">
+                Mauris id vestibulum metus, ut pretium lacus. Phasellus ac mi
+                magna. Sed scelerisque, turpis vitae consequat vehicula, sem
+                turpis pretium tellus, tempor posuere turpis est ac velit.
+              </p>
+            </div>
+            <div class="features__item">
+              <img
+                src="/img/icon-payments.svg"
+                alt=""
+                width="60.57"
+                height="48"
+                class="features__icon"
+              />
+              <h3 class="features__title">Protected payments</h3>
+              <p class="features__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                id vestibulum metus, ut pretium lacus.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="fw-feature fullwidth dark">
+          <div class="wrapper fw-feature__wrapper">
+            <h2 class="fw-feature__title">
+              Angel investment matching in real time.
+            </h2>
+            <p class="fw-feature__description fullwidth__description medium">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id
+              vestibulum metus, ut pretium lacus. Phasellus ac mi magna. Sed
+              scelerisque, turpis vitae.
+            </p>
+            <img
+              src="/img/laptop-dashboard.svg"
+              alt="open laptop showing a dashboard on the screen"
+              class="fw-feature__image"
+              width="792"
+              height="465"
+            />
+          </div>
+        </section>
+        <section class="alt-feature">
+          <div class="alt-feature__wrapper wrapper">
+            <div class="alt-feature__row">
+              <img
+                src="/img/laptop-check.svg"
+                alt="laptop with green check mark"
+                class="alt-feature__image"
+                width="401"
+                height="242"
+              />
+              <div class="alt-feature__text">
+                <h3 class="large">
+                  <span>AI-Powered Matching</span> Avoid human error
+                </h3>
+                <p class="medium">
+                  Ut sapien lectus, vulputate vitae lacus vel, incidunt sodales
+                  ipsum. Proin a sem molestie, pulvinar ante non, laoreet ipsum.
+                  Sed nec pretium est. Nunc lectus sem.
+                </p>
+              </div>
+            </div>
+            <div class="alt-feature__row">
+              <img
+                src="/img/tablet-phone.svg"
+                alt="tablet adn phone showing the Mythos dashboard"
+                class="alt-feature__image"
+                width="353"
+                height="345"
+              />
+              <div class="alt-feature__text">
+                <h3 class="large">
+                  <span>Immediate notifications</span> Never miss an alert again
+                </h3>
+                <p class="medium">
+                  Lorem ipsum dolor sit amet,
+                  <a href="">consectetur adipiscing</a> elit. Sed purus neque,
+                  tempor sit amet fringilla in, aliquam et justo. Aenean ac
+                  porta urna. Nullam quis mattis mauris.
+                </p>
+              </div>
+            </div>
+            <div class="alt-feature__row">
+              <img
+                src="/img/tablet-payments.svg"
+                alt="tablet with Mythos dashboard"
+                class="alt-feature__image"
+                width="242"
+                height="345"
+              />
+              <div class="alt-feature__text">
+                <h3 class="large">
+                  <span>Protected Payments</span> Send payments from anywhere
+                </h3>
+                <p class="medium">
+                  Ut sapien lectus, vulputate vitae lacus vel, tincidunt sodales
+                  ipsum. <a href="">Proin a sem molestie</a>, pulvinar ante non,
+                  laoreet ipsum. Sed nec pretium est. Nunc lectus sem
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="testimonial dark">
+          <h2 class="visually-hidden">Testimonial</h2>
+          <div class="wrapper testimonial__wrapper">
+            <figure>
+              <svg
+                class="testimonial__icon"
+                width="78"
+                height="66"
+                viewBox="0 0 78 66"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M17.8829 66C11.922 66 7.41951 63.8319 4.37561 59.4957C1.45854 55.0319 0 48.8463 0 40.9391C0 31.8841 2.21951 23.913 6.65854 17.0261C11.0975 10.1391 17.8829 4.46377 27.0146 0L33.1024 12.2435C27.3951 15.1768 23.0829 18.5565 20.1659 22.3826C17.3756 26.0811 15.9805 30.8 15.9805 36.5391C16.361 36.4116 16.9951 36.3478 17.8829 36.3478C21.9414 36.3478 25.3658 37.6232 28.1561 40.1739C31.0731 42.5971 32.5317 45.9768 32.5317 50.313C32.5317 55.1594 31.1366 58.9855 28.3463 61.7913C25.5561 64.5971 22.0683 66 17.8829 66ZM62.7805 66C56.8195 66 52.3171 63.8319 49.2732 59.4957C46.3561 55.0319 44.8976 48.8463 44.8976 40.9391C44.8976 31.8841 47.1171 23.913 51.5561 17.0261C55.9951 10.1391 62.7805 4.46377 71.9122 0L78 12.2435C72.2927 15.1768 67.9805 18.5565 65.0634 22.3826C62.2731 26.0811 60.8781 30.8 60.8781 36.5391C61.2585 36.4116 61.8927 36.3478 62.7805 36.3478C66.839 36.3478 70.2634 37.6232 73.0537 40.1739C75.9707 42.5971 77.4293 45.9768 77.4293 50.313C77.4293 55.1594 76.0342 58.9855 73.2439 61.7913C70.4536 64.5971 66.9659 66 62.7805 66Z"
+                  fill="#00D3D4"
+                />
+              </svg>
+              <blockquote>
+                <p class="testimonial__quote">
+                  When I first started Evermindly, it was a bootstrapped
+                  business. However, we were quickly running out of money.
+                  Thanks to Mythos, we were matched with investors for our seed
+                  funding and have now secured a Series A round!
+                </p>
+              </blockquote>
+              <svg
+                class="testimonial__icon"
+                width="78"
+                height="66"
+                viewBox="0 0 78 66"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M17.8829 66C11.922 66 7.41951 63.8319 4.37561 59.4957C1.45854 55.0319 0 48.8463 0 40.9391C0 31.8841 2.21951 23.913 6.65854 17.0261C11.0975 10.1391 17.8829 4.46377 27.0146 0L33.1024 12.2435C27.3951 15.1768 23.0829 18.5565 20.1659 22.3826C17.3756 26.0811 15.9805 30.8 15.9805 36.5391C16.361 36.4116 16.9951 36.3478 17.8829 36.3478C21.9414 36.3478 25.3658 37.6232 28.1561 40.1739C31.0731 42.5971 32.5317 45.9768 32.5317 50.313C32.5317 55.1594 31.1366 58.9855 28.3463 61.7913C25.5561 64.5971 22.0683 66 17.8829 66ZM62.7805 66C56.8195 66 52.3171 63.8319 49.2732 59.4957C46.3561 55.0319 44.8976 48.8463 44.8976 40.9391C44.8976 31.8841 47.1171 23.913 51.5561 17.0261C55.9951 10.1391 62.7805 4.46377 71.9122 0L78 12.2435C72.2927 15.1768 67.9805 18.5565 65.0634 22.3826C62.2731 26.0811 60.8781 30.8 60.8781 36.5391C61.2585 36.4116 61.8927 36.3478 62.7805 36.3478C66.839 36.3478 70.2634 37.6232 73.0537 40.1739C75.9707 42.5971 77.4293 45.9768 77.4293 50.313C77.4293 55.1594 76.0342 58.9855 73.2439 61.7913C70.4536 64.5971 66.9659 66 62.7805 66Z"
+                  fill="#00D3D4"
+                />
+              </svg>
+              <div class="testimonial__author-wrapper">
+                <img
+                  src="/img/author-1x.jpg"
+                  alt="headshot of Janice Hsu"
+                  srcset="/img/author-2x.jpg 2x, /img/author-3x.jpg 3x"
+                  class="testimonial__author"
+                />
+                <figcaption class="testimonial__author-caption">
+                  <p class="medium testimonial__author-description">
+                    Janice Hsu<br />
+                    Founder and CEO, Evermindly
+                  </p>
+                </figcaption>
+              </div>
+            </figure>
+          </div>
+        </section>
+        <section class="blog fullwidth">
+          <div class="wrapper">
+            <h2>Recent blog posts</h2>
+            <div class="blog__grid">
+              <article class="blog__item">
+                <img class="blog__image"
+                  src="/img/blog/blog1-2x.jpg"
+                  alt=""
+                  srcset="/img/blog/blog1-3x.jpg 3x"
+                  width="774"
+                  height="1032"
+                />
+                <div class="blog__filter"></div>
+                <div class="blog__text">
+                  <h3 class="blog__title">
+                    <a href="">Navigating the Angel Investment Landscape</h3></a>
+                  <p class="xsmall">
+                    Vestibulum ultrices erat est, non imperdiet velit ultricies
+                    a. Proin erat orci, lacinia a eros nec, ultricies rutrum
+                    leo.
+                  </p>
+                  <div class="blog__meta">
+                    <time datetime="2024-06-14">June 14, 2024</time>
+                    <p>8 min read</p>
+                  </div>
+                </div>
+              </article>
+              <article class="blog__item">
+                <img class="blog__image"
+                  src="/img/blog/blog2-2x.jpg"
+                  alt=""
+                  srcset="/img/blog/blog2-3x.jpg 3x"
+                  width="1161"
+                  height="774"
+                />
+                <div class="blog__filter"></div>
+                <div class="blog__text">
+                  <h3 class="blog__title">
+                    <a href="">The Ultimate Guide to Finding Promising Startups to Invest in</h3></a>
+                  <p class="xsmall">
+                    Etiam interdum rhoncus eros id bibendum. Duis rutrum nisl quis accumsan viverra.
+                  </p>
+                  <div class="blog__meta">
+                    <time datetime="2024-05-21">May 21, 2024</time>
+                    <p>15 min read</p>
+                  </div>
+                </div>
+              </article>
+              <article class="blog__item">
+                <img class="blog__image"
+                  src="/img/blog/blog3-2x.jpg"
+                  alt=""
+                  srcset="/img/blog/blog3-3x.jpg 3x"
+                  width="985"
+                  height="774"
+                />
+                <div class="blog__filter"></div>
+                <div class="blog__text">
+                  <h3 class="blog__title">
+                    <a href="">Industry Insights: How to Identify Emerging Trends</h3></a>
+                  <p class="xsmall">
+                    Non imperdiet velit ultricies a. Proin erat orci, lacinia a eros  nec, ultricies rutrum leo.
+                  </p>
+                  <div class="blog__meta">
+                    <time datetime="2024-05-09">May 9, 2024</time>
+                    <p>11 min read</p>
+                  </div>
+                </div>
+              </article>
+              <article class="blog__item">
+                <img class="blog__image"
+                  src="/img/blog/blog4-2x.jpg"
+                  alt=""
+                  srcset="/img/blog/blog4-3x.jpg 3x"
+                  width="801"
+                  height="1200"
+                />
+                <div class="blog__filter"></div>
+                <div class="blog__text">
+                  <h3 class="blog__title">
+                    <a href="">Building Connections to Uncover Investment Opportunities</h3></a>
+                  <p class="xsmall">
+                    Duis rutrum nisl quis accumsan viverra. Morbi risus ante, convallis vel nulla ut, iaculis maximus sapien.
+                  </p>
+                  <div class="blog__meta">
+                    <time datetime="2024-04-18">April 18, 2024</time>
+                    <p>18 min read</p>
+                  </div>
+                </div>
+              </article>
+              <article class="blog__item">
+                <img class="blog__image"
+                  src="/img/blog/blog5-2x.jpg"
+                  alt=""
+                  srcset="/img/blog/blog5-3x.jpg 3x"
+                  width="1200"
+                  height="900"
+                />
+                <div class="blog__filter"></div>
+                <div class="blog__text">
+                  <h3 class="blog__title">
+                    <a href="">Insider Tips for Finding Hidden Gems</h3></a>
+                  <p class="xsmall">
+                    Vestibulum ultrices erat est, non imperdiet velit ultricies a. Proin erat orci.
+                  </p>
+                  <div class="blog__meta">
+                    <time datetime="2024-03-30">March 30, 2024</time>
+                    <p>9 min read</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="fw-cta fullwidth dark">
+          <div class="wrapper fw-cta__wrapper">
+            <h2 class="fw-cta__title">Get started with Mythos today</h2>
+            <p class="fw-cta__description fullwidth__description large">
+              Contact us to find the next undiscovered unicorn.
+            </p>
+            <form class="form fw-cta__form">
+              <label for="txtEmail" class="form__label fw-cta__label"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="txtEmail"
+                class="form__text fw-cta__text"
+                required
+                placeholder="test@test.com"
+              />
+              <button type="submit" class="fw-cta__button button primary white">
+                Contact
+              </button>
+            </form>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer id="footer" class="footer">
+      <h2 class="visually-hidden">Footer</h2>
+      <div class="footer__wrapper wrapper">
+        <section class="footer__logo">
+          <a href="/" class="footer__homelink hover-fade">
+            <img
+              src="/img/logo-mythos-dark.svg"
+              alt="Mythos homepage"
+              class="footer__logo-image"
+              width="128"
+              height="36"
+            />
+          </a>
+          <p class="footer__copyright">© 2023 Mythos, LLC</p>
+        </section>
+        <section class="footer__column">
+          <h3 class="footer__column-title">Company</h3>
+          <ul class="footer__links">
+            <li class="footer__item">
+              <a href="" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">News & Press</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Careers</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Contact</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer__column">
+          <h3 class="footer__column-title">Support</h3>
+          <ul class="footer__links">
+            <li class="footer__item">
+              <a href="" class="footer__link">Customer Support</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Community Forum</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Knowledge Base</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer__column">
+          <h3 class="footer__column-title">Follow</h3>
+          <ul class="footer__links">
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="footer__social"
+                >
+                  <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    class="footer__social-path"
+                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                  />
+                </svg>
+                Twitter</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="footer__social"
+                >
+                  <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    class="footer__social-path"
+                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                  />
+                </svg>
+                Facebook</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="footer__social"
+                >
+                  <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    class="footer__social-path"
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  />
+                </svg>
+                Instagram</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                  class="footer__social"
+                >
+                  <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    class="footer__social-path"
+                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                  />
+                </svg>
+                YouTube</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="footer__column">
+          <h3 class="footer__column-title">Resources</h3>
+          <ul class="footer__links">
+            <li class="footer__item">
+              <a href="" class="footer__link">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Terms of Use</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

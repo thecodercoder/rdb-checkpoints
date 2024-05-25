@@ -1,0 +1,29 @@
+:root {
+  --main-bg: hsl(0, 0%, 100%);
+  --text-dark: hsl(233, 14%, 25%);
+  --text-light: hsl(0, 0%, 100%);
+  --text-link: hsl(320, 85%, 41%);
+  --header-bg: hsl(232, 58%, 55%);
+  --menu-shadow: hsla(232, 58%, 35%, 60%);
+  --menu-overlay: hsla(233, 14%, 25%, 40%);
+  --link-gradient1: hsl(180, 100%, 42%);
+  --link-gradient2: hsl(50, 99%, 53%);
+  --hero-bg: hsl(232, 58%, 55%);
+  --button-primary-bg: hsl(180, 100%, 42%);
+  --button-primary-bg-hover: hsl(180, 100%, 37%);
+  --button-primary-text: hsl(233, 14%, 25%);
+  --button-primary-white-bg: hsl(0, 0%, 100%);
+  --button-primary-white-bg-hover: hsl(0, 0%, 90%);
+  --button-secondary-bg: transparent;
+  --button-secondary-bg-hover: hsl(0, 0%, 100%);
+  --button-secondary-border: hsl(0, 0%, 100%);
+  --button-secondary-text: hsl(0, 0%, 100%);
+  --button-secondary-text-hover: var(--hero-bg);
+  --blog-gradient1: hsl(245, 75%, 39%);
+  --blog-gradient2: hsl(320, 85%, 41%);
+  --blog-shadow: hsla(233, 14%, 25%, 40%);
+  --fullwidth-bg: hsl(320, 85%, 41%);
+  --gradient1: hsl(250, 14%, 25%);
+  --gradient2: hsl(232, 58%, 55%);
+  --gradient3: hsl(180, 100%, 42%);
+}

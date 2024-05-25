@@ -1,0 +1,15 @@
+@use '../util' as u;
+
+.fullwidth {
+  text-align: center;
+
+  &.dark {
+    color: var(--text-light);
+  }
+
+  &__description {
+    max-width: 70ch;
+    margin-inline: auto;
+    margin-block-end: u.rem(40);
+  }
+}
